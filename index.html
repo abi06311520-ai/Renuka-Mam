@@ -197,7 +197,7 @@
     }
 
     .poem-box::after {
-      content: "â¦";
+      content: "*";
       position: absolute;
       right: 25px;
       top: 13px;
@@ -473,9 +473,9 @@
   <div id="modal-popper-container"></div>
 
   <header>
-    <div class="eyebrow">ðŸŒ¼ðŸ¤</div>
-    <h1>Happy Teachersâ€™ Day,<br>Renuka Mam! ðŸŒ¸</h1>
-    <p class="subtitle">My Favourite Teacher Â· My Inspiration</p>
+    <div class="eyebrow">With gratitude</div>
+    <h1>Happy Teachers' Day,<br>Renuka Mam!</h1>
+    <p class="subtitle">My Favourite Teacher - My Inspiration</p>
     <div class="gold-line"></div>
   </header>
 
@@ -528,18 +528,18 @@
       </div>
 
       <div class="btn-container">
-        <button class="btn" onclick="openModal()">Open Dear MamðŸ’ž &nbsp; âœ¦</button>
+        <button class="btn" onclick="openModal()">Open Dear Mam &nbsp; *</button>
       </div>
     </div>
 
   </div>
 
-  <footer>Made with respect, gratitude &amp; love Â· Abinaya â¤ï¸</footer>
+  <footer>Made with respect, gratitude &amp; love - Abinaya</footer>
 
   <div id="photo-modal" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal()" role="button" aria-label="Close memories">&times;</span>
-      <h2 class="gallery-title">Happyyy Teachers day MamðŸª·â¤ï¸</h2>
+      <h2 class="gallery-title">Happyyy Teachers day Mam</h2>
       <p class="gallery-subtitle">A few moments I will always treasure</p>
       
       <div class="college-gallery">
@@ -553,7 +553,7 @@
       </div>
 
       <div style="margin-top: 25px; font-size: 1.1rem; font-weight: bold; color: #be185d;">
-        With lots of respect & love,<br>Abinaya â¤ï¸
+        With lots of respect & love,<br>Abinaya
       </div>
     </div>
   </div>
@@ -567,13 +567,13 @@ The way you explain every concept patiently and make even difficult problems loo
 
 You have not only taught me Mathematics, but also helped me improve my concentration, confidence, and approach towards learning. Your guidance and encouragement have always motivated me to do better.
 
-I have immense respect and gratitude for you, Mam. â¤ï¸
+ I have immense respect and gratitude for you, Mam.
 
 One of my biggest dreams is to build a successful career and get placed in a good and reputed company. I sincerely hope that one day, when I achieve my goals, I can make you proud and show you that your guidance and support truly made a difference in my journey.
 
-Thank you for being more than just a teacher â€” thank you for being an inspiration.
+ Thank you for being more than just a teacher - thank you for being an inspiration.
 
-Wishing you a very Happy Teachersâ€™ Day, Renuka Devi Mam! ðŸŒ·
+ Wishing you a very Happy Teachers' Day, Renuka Devi Mam!
 
 With lots of respect and gratitude,
 Abinaya`;
@@ -593,7 +593,7 @@ Abinaya`;
     function createPopper() {
       const popper = document.createElement('div');
       popper.classList.add('popper');
-      const popperTypes = ['ðŸ’–', 'ðŸŒ¸', 'ðŸ’•', 'âœ¨', 'ðŸ’—', 'ðŸŒº', 'ðŸŒ·', 'ðŸŒ¹', 'ðŸ’', 'ðŸŒ»', 'â¤ï¸'];
+      const popperTypes = ['*', '+', 'o', '~'];
       popper.innerText = popperTypes[Math.floor(Math.random() * popperTypes.length)];
       popper.style.left = Math.random() * 100 + "vw";
       popper.style.animationDuration = (Math.random() * 2 + 2) + "s";
@@ -607,7 +607,7 @@ Abinaya`;
 
     function triggerPopperExplosion() {
       const container = document.getElementById('modal-popper-container') || document.body;
-      const popperTypes = ['ðŸ’–', 'ðŸŒ¸', 'ðŸ’•', 'âœ¨', 'ðŸ’—', 'ðŸŒº', 'ðŸŒ·', 'ðŸŒ¹', 'ðŸ’', 'ðŸŒ»', 'â¤ï¸', 'ðŸŽ“'];
+      const popperTypes = ['*', '+', 'o', '~'];
 
       for (let i = 0; i < 40; i++) {
         setTimeout(() => {
