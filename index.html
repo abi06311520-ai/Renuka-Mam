@@ -407,11 +407,13 @@
       pointer-events: none;
       user-select: none;
       z-index: 99;
-      font-size: 21px;
-      animation: floatUp 4s ease-in-out forwards;
+      font-size: 30px;
+      line-height: 1;
+      text-shadow: 0 2px 8px rgba(117,28,70,.2);
+      animation: floatUp 5s ease-in-out forwards;
     }
 
-    .popper-particle { z-index: 1001; font-size: 25px; }
+    .popper-particle { z-index: 1001; font-size: 34px; }
 
     @keyframes floatUp {
       0% { opacity: 0; transform: translateY(0) scale(.5) rotate(0); }
@@ -629,6 +631,7 @@ Abinaya`;
     function playAudio() {
       if (!isAudioPlaying) {
         audio.loop = true;
+        audio.volume = 0.8;
         audio.play().then(() => { isAudioPlaying = true; }).catch(() => {});
       }
     }
@@ -661,8 +664,8 @@ Abinaya`;
       playAudio();
     }, { once: true });
 
-    ['click', 'touchstart', 'pointerdown'].forEach(event => {
-      window.addEventListener(event, playAudio, { once: true, passive: true });
+    ['click', 'touchstart', 'pointerdown', 'keydown'].forEach(event => {
+      document.addEventListener(event, playAudio, { once: true, passive: true });
     });
   </script>
 </body>
