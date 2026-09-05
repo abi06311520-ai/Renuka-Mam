@@ -655,6 +655,10 @@ h1{
 
 <body>
 
+<audio id="bg-music" autoplay loop preload="auto">
+    <source src="background-music.mp3" type="audio/mpeg">
+</audio>
+
 <!-- =========================
      FLOATING FLOWERS
 ========================= -->
@@ -932,6 +936,17 @@ modal.addEventListener("click", (event) => {
     }
 
 });
+
+const audio = document.getElementById("bg-music");
+
+function startAudio(){
+    audio.volume = 0.8;
+    audio.play().catch(() => {});
+}
+
+document.addEventListener("click", startAudio, { once:true });
+document.addEventListener("touchstart", startAudio, { once:true, passive:true });
+document.addEventListener("pointerdown", startAudio, { once:true, passive:true });
 
 
 /* =========================
