@@ -593,7 +593,7 @@ Abinaya`;
     function createPopper() {
       const popper = document.createElement('div');
       popper.classList.add('popper');
-      const popperTypes = ['*', '+', 'o', '~'];
+      const popperTypes = ['\u{1F337}', '\u{1F338}', '\u{1F339}', '\u{1F33A}', '\u{1F33B}', '\u{1F33C}'];
       popper.innerText = popperTypes[Math.floor(Math.random() * popperTypes.length)];
       popper.style.left = Math.random() * 100 + "vw";
       popper.style.animationDuration = (Math.random() * 2 + 2) + "s";
@@ -607,7 +607,7 @@ Abinaya`;
 
     function triggerPopperExplosion() {
       const container = document.getElementById('modal-popper-container') || document.body;
-      const popperTypes = ['*', '+', 'o', '~'];
+      const popperTypes = ['\u{1F337}', '\u{1F338}', '\u{1F339}', '\u{1F33A}', '\u{1F33B}', '\u{1F33C}'];
 
       for (let i = 0; i < 40; i++) {
         setTimeout(() => {
